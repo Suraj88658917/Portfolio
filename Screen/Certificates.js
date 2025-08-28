@@ -27,7 +27,7 @@ const certificatesData = [
   {
     id: "3",
     title: " JAVA Certificate",
-    image: require("../assets/java.jpg"),
+    image: require("../assets/Javacertificate.jpg"),
   },
 ];
 

@@ -8,10 +8,10 @@ import { Asset } from "expo-asset";
 const CVComponent = () => {
   const handleViewCV = async () => {
     try {
-      const asset = Asset.fromModule(require("../assets/SurajSaini_resume1.pdf"));
+      const asset = Asset.fromModule(require("../assets/SurajSaini_Resume.pdf.pdf"));
       await asset.downloadAsync();
 
-      const fileUri = FileSystem.documentDirectory + "SurajSaini_resume1.pdf";
+      const fileUri = FileSystem.documentDirectory + "SurajSaini_Resume.pdf.pdf";
 
       await FileSystem.copyAsync({
         from: asset.localUri,
@@ -31,10 +31,10 @@ const CVComponent = () => {
 
   const handleDownloadCV = async () => {
     try {
-      const asset = Asset.fromModule(require("../assets/SurajSaini_resume1.pdf"));
+      const asset = Asset.fromModule(require("../assets/SurajSaini_Resume.pdf.pdf"));
       await asset.downloadAsync();
 
-      const fileUri = FileSystem.documentDirectory + "SurajSaini_resume1.pdf";
+      const fileUri = FileSystem.documentDirectory + "SurajSaini_Resume.pdf.pdf";
 
       await FileSystem.copyAsync({
         from: asset.localUri,

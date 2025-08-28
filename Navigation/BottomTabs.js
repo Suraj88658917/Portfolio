@@ -30,7 +30,7 @@ export default function BottomTab() {
         tabBarInactiveTintColor: 'gray',
       })}
     >
-      <Tab.Screen name="Profile" component={ProfileScreen} />
+      <Tab.Screen name="ProfileTab" component={ProfileScreen} />
       <Tab.Screen name="Project" component={ProjectScreen} />
       <Tab.Screen name="Contact" component={ContactScreen} />
     </Tab.Navigator>

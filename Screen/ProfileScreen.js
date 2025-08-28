@@ -15,6 +15,7 @@ import {
 import { Alert, Platform } from 'react-native';
 import CVComponent from './CVComponent';
 import Certificates from './Certificates';
+import ProjectORContact from './ProjectORContact';
 
 
 
@@ -135,42 +136,39 @@ export default function ProfileScreen({ navigation }) {
   title="About" 
   bodyText={
     <Text style={styles.bodyText}>
-      I am an aspiring <Text style={styles.highlight}>Software Developer</Text> with strong expertise in <Text style={styles.highlight}>React Native</Text> and <Text style={styles.highlight}>Android Studio</Text>, backed by a solid foundation in <Text style={styles.highlight}>Java</Text>, <Text style={styles.highlight}>JavaScript</Text>, and <Text style={styles.highlight}>Python</Text>. With a strong grasp of <Text style={styles.highlight}>Data Structures and Algorithms (DSA)</Text>, I enjoy building efficient, scalable, and high-performing applications that address real-world challenges.{"\n\n"}
+  I am an aspiring <Text style={styles.highlight}>Software Developer</Text> with strong expertise in <Text style={styles.highlight}>React Native</Text> and <Text style={styles.highlight}>Android Studio</Text>, supported by a solid foundation in <Text style={styles.highlight}>Java</Text>, <Text style={styles.highlight}>JavaScript</Text>, and <Text style={styles.highlight}>Python</Text>. I have a strong grasp of <Text style={styles.highlight}>Data Structures and Algorithms (DSA)</Text>, and I enjoy building efficient, scalable, and high-performing applications that solve real-world problems.{"\n\n"}
 
-      My journey in technology has been fueled by curiosity and passion for learning. I specialize in transforming ideas into functional mobile applications, with a focus on <Text style={styles.highlight}>clean code</Text>, <Text style={styles.highlight}>intuitive design</Text>, and <Text style={styles.highlight}>seamless user experience</Text>.{"\n\n"}
+  My journey in technology is driven by curiosity and a passion for learning. I specialize in transforming ideas into fully functional mobile applications, focusing on <Text style={styles.highlight}>clean code</Text>, <Text style={styles.highlight}>intuitive design</Text>, and a <Text style={styles.highlight}>seamless user experience</Text>.{"\n\n"}
+</Text>
 
+     }
+/>
+
+
+  {/* <AnimatedCard
+  title="Interests"
+  bodyText={
+    <Text style={styles.bodyText}>
       I am particularly drawn to <Text style={styles.highlight}>full-stack development</Text>, where I can integrate frontend creativity with backend logic to deliver complete solutions. Beyond coding, I am a <Text style={styles.highlight}>quick learner</Text> and <Text style={styles.highlight}>problem solver</Text>, constantly exploring new technologies that enhance my development skills.{"\n\n"}
+    </Text>
+  }
+/> */}
 
-      Currently, I am working on multiple projects, including:{"\n\n"}
+<AnimatedCard
+  title="Impactful Work"
+  bodyText={
+    <Text style={styles.bodyText}>
+ Currently, I am working on multiple projects, including:{"\n\n"}
       • <Text style={styles.highlight}>RoomieFind App</Text> – A student-focused app for finding roommates, mess, single rooms, and rental flats (1BHK, 2BHK, 3BHK).{"\n"}
       • <Text style={styles.highlight}>Employee Management App</Text> – A simple yet efficient system for managing employees.{"\n"}
       • <Text style={styles.highlight}>Legal Consultancy App</Text> – A digital platform to connect users with legal experts.{"\n"}
-      • <Text style={styles.highlight}>ChatAI App</Text> – An AI-powered chat application.{"\n"}
-      • <Text style={styles.highlight}>Dating App</Text> – A modern solution for meaningful social connections.{"\n\n"}
+      • <Text style={styles.highlight}>AI-Chat App</Text> – An AI-powered chat application.{"\n"}
+      • <Text style={styles.highlight}>Amore-Dating App</Text> – A modern solution for meaningful social connections.{"\n\n"}
 
       What excites me the most is the ability to bring ideas to life through apps—whether it’s improving productivity, connecting people, or delivering unique solutions. My goal is to grow as a versatile developer while contributing to <Text style={styles.highlight}>impactful projects</Text> that make a difference.
-    </Text>
-    
-  }
-/>
-<AnimatedCard
-  title="Work"
-  bodyText={
-    <Text style={styles.bodyText}>
-      I have been building diverse <Text style={styles.highlight}>mobile applications</Text> using <Text style={styles.highlight}>React Native</Text>, focusing on <Text style={styles.highlight}>clean UI</Text>, <Text style={styles.highlight}>smooth performance</Text>, and <Text style={styles.highlight}>practical functionality</Text>. Some of the projects I’ve developed include:{"\n\n"}
-
-      • <Text style={styles.highlight}>RoomieFind App</Text> – A <Text style={styles.highlight}>mobile app</Text> to help <Text style={styles.highlight}>students</Text> find <Text style={styles.highlight}>roommates</Text>, <Text style={styles.highlight}>mess facilities</Text>, and <Text style={styles.highlight}>rental flats</Text> (1BHK, 2BHK, 3BHK). Built using <Text style={styles.highlight}>React Native</Text> for <Text style={styles.highlight}>cross-platform mobile development</Text>.{"\n"}
-
-      • <Text style={styles.highlight}>Employee Management App</Text> – A simple app for managing <Text style={styles.highlight}>employee records</Text>, <Text style={styles.highlight}>attendance</Text>, and <Text style={styles.highlight}>tasks</Text> efficiently.{"\n"}
-
-      • <Text style={styles.highlight}>Legal Consultancy App</Text> – A <Text style={styles.highlight}>digital platform</Text> connecting users with <Text style={styles.highlight}>legal experts</Text> for <Text style={styles.highlight}>advice</Text> and <Text style={styles.highlight}>consultation</Text>.{"\n"}
-
-      • <Text style={styles.highlight}>ChatAI App</Text> – An <Text style={styles.highlight}>AI-powered chat application</Text> for <Text style={styles.highlight}>real-time conversations</Text> and <Text style={styles.highlight}>assistance</Text>.{"\n"}
-
-      • <Text style={styles.highlight}>Dating App</Text> – A <Text style={styles.highlight}>social app</Text> designed to <Text style={styles.highlight}>connect people</Text> for <Text style={styles.highlight}>meaningful interactions</Text>.
-    </Text>
-  }
-/>
+  </Text>
+  }/>
+ 
 
          <AnimatedCard
   title="Interests"
@@ -184,6 +182,13 @@ export default function ProfileScreen({ navigation }) {
     </Text>
   }
 />
+
+<View style={{ marginBottom:5, marginTop:15 }} >
+  <ProjectORContact />
+</View>
+
+
+
 <View style={{ marginBottom:5 }}>
   <Certificates />
 </View>

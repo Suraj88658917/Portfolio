@@ -8,7 +8,7 @@ const { width, height } = Dimensions.get("window");
 const SplashScreen = ({ navigation }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
-      navigation.replace("Profile"); // Navigate after 2 seconds
+      navigation.replace("ProfileStack"); // Navigate after 2 seconds
     }, 2000);
     return () => clearTimeout(timer);
   }, []);
