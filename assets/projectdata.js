@@ -2,11 +2,11 @@ export const projectsData = [
   
   {
     id: "1",
-    title: "AI Chat App",
+    title: "ConvoBot -AIChat App",
     description:
       "AI Chat App is an intelligent, user-friendly application designed to provide instant conversational assistance. Leveraging cutting-edge AI technology, it can answer questions, provide recommendations, and engage in meaningful dialogue across a wide range of topics. Whether you need help with learning, brainstorming ideas, managing tasks, or simply having a conversation, AI Chat App is your smart companion.",
     techStack: ["React Native", "OpenAI API", "Axios", "Redux"],
-    github: "https://github.com/Suraj88658917/AIChat-App",
+    github: "https://github.com/Suraj88658917/ConvoBot",
     live: "https://your-live-link.com",
   },
    {
@@ -15,7 +15,7 @@ export const projectsData = [
     description:
       "A React Native dating app that lets users create profiles, browse and match with others, and chat in real-time. It includes secure authentication, profile management, and a user-friendly interface for a seamless dating experience.",
     techStack: ["React Native (frontend)" , "Node.js" , "Express", "MongoDB ", "Socket.IO (real-time chat)", "JWT/bcrypt (auth)"],
-    github: "https://github.com/Suraj88658917/Amore-Dating-App",
+    github: "https://github.com/Suraj88658917/Amore-Dating-App/tree/main",
     live: "https://your-live-link.com",
   },
   {
